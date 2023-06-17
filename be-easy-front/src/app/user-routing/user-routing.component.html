@@ -1,0 +1,13 @@
+<div class="container">
+	<button type="button" class="btn btn-success" (click)="download()" [disabled]="mapEnabled">Descarga Mapa</button>
+
+	<div
+		style="height: 90vh;"
+		leaflet
+		[leafletOptions]="options"
+		(leafletMapReady)="onMapReady($event)"
+	></div>
+</div>
+
+
+  
